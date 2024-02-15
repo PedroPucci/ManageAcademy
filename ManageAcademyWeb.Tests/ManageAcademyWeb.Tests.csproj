@@ -38,8 +38,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Dto\" />
-    <Folder Include="Entity\" />
+    <ProjectReference Include="..\ManageAcademyWeb.Domain\ManageAcademyWeb.Domain.csproj" />
   </ItemGroup>
 
 </Project>
