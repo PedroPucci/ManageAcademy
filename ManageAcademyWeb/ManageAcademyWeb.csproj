@@ -35,4 +35,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ManageAcademyWeb.Services\ManageAcademyWeb.Services.csproj" />
+  </ItemGroup>
+
 </Project>

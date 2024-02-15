@@ -19,11 +19,6 @@ namespace ManageAcademyWeb.Services.Services
             _mapper = mapper;
         }
 
-        public PermissionService(IRepositoryUoW repositoryUoW)
-        {
-            _repositoryUoW = repositoryUoW;
-        }
-
         public Task<GenericResult<PermissionEntity>> AddPermission(PermissionDto permissionDto)
         {
             throw new NotImplementedException();
