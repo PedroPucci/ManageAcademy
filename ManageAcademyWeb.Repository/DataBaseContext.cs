@@ -18,6 +18,6 @@ namespace ManageAcademyWeb.Repository
             optionsBuilder.UseSqlServer(Configuration.GetConnectionString("WebApiDatabase"));
         }
 
-        public DbSet<PermissionEntity> Permission { get; set; }
+        public DbSet<PermissionEntity> PermissionEntity { get; set; }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using ManageAcademyWeb.Repository.Repository.Interfaces;
 using ManageAcademyWeb.Services.Services.Interfaces;
 using Microsoft.Extensions.Configuration;
 

@@ -1,4 +1,5 @@
-﻿using ManageAcademyWeb.Domain.Dto;
+﻿using ManageAcademyWeb.Domain.Contracts;
+using ManageAcademyWeb.Domain.Dto;
 using ManageAcademyWeb.Domain.Entity;
 
 namespace ManageAcademyWeb.Services.Services.Interfaces

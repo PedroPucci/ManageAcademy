@@ -36,6 +36,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ManageAcademyWeb.Domain\ManageAcademyWeb.Domain.csproj" />
+    <ProjectReference Include="..\ManageAcademyWeb.Repository\ManageAcademyWeb.Repository.csproj" />
   </ItemGroup>
 
 </Project>

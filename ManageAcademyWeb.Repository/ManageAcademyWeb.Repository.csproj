@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Migration\" />
-    <Folder Include="Repository\Interfaces\" />
   </ItemGroup>
 
   <ItemGroup>
