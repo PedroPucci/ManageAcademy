@@ -1,4 +1,4 @@
-﻿using ManageAcademyWeb.Domain.Enum;
+﻿using ManageAcademyWeb.Domain.Enums;
 
 namespace ManageAcademyWeb.Domain.Dto
 {
