@@ -1,12 +1,12 @@
 ﻿using ManageAcademyWeb.Domain.Dto;
-using ManageAcademyWeb.Domain.Enum;
+using ManageAcademyWeb.Domain.Enums;
 
 namespace ManageAcademyWeb.Tests.Dto
 {
     public class PermissionDtoTests
     {
         [Fact(DisplayName = "Create PermissionDto with valid values")]
-        public void CreateUserDto_WithValidValues()
+        public void CreatePermissionDto_WithValidValues()
         {
             // Arrange
             var name = "permissao 1";

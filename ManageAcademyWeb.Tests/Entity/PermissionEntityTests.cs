@@ -1,12 +1,12 @@
 ﻿using ManageAcademyWeb.Domain.Entity;
-using ManageAcademyWeb.Domain.Enum;
+using ManageAcademyWeb.Domain.Enums;
 
 namespace ManageAcademyWeb.Tests.Entity
 {
     public class PermissionEntityTests
     {
         [Fact(DisplayName = "Create PermissionEntity with custom values")]
-        public void CreateUserEntity_WithCustomValues()
+        public void CreatePermissionEntity_WithCustomValues()
         {
             // Arrange
             var name = "permissao 1";
@@ -15,7 +15,7 @@ namespace ManageAcademyWeb.Tests.Entity
             var type = PermissionStatus.Active;
 
             // Act
-            var permissionEntity = new PermissionEntity(1)
+            var permissionEntity = new PermissionEntity()
             {
                 Name = name,
                 Description = description,

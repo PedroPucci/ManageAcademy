@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace ManageAcademyWeb.Controllers
 {
     [ApiController]
-    [Route("api/v1/user")]
+    [Route("api/v1/permission")]
     public class PermissionController : Controller
     {
         private readonly IUnitOfWorkService _serviceUoW;
