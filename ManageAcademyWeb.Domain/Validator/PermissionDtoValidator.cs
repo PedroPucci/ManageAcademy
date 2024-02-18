@@ -15,12 +15,6 @@ namespace ManageAcademyWeb.Domain.Validator
 
             RuleFor(x => x.Description)
                 .NotEmpty();
-
-            RuleFor(x => x.Status)
-                .IsInEnum();
-
-            RuleFor(x => x.Type)
-                .IsInEnum();
         }
     }
 }

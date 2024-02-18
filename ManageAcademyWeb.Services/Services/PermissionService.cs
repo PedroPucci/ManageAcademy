@@ -28,7 +28,7 @@ namespace ManageAcademyWeb.Services.Services
             using var transaction = _repositoryUoW.BeginTransaction();
             try
             {
-                var permissionEntity = _mapper.Map<PermissionDto, PermissionEntity>(permissionDto);
+                var permissionEntity = _mapper.Map<PermissionDto, PermissionEntity>(permissionDto);                
                 var result = await _repositoryUoW.PermissionRepository.AddPermissionAsync(permissionEntity);
 
                 await _repositoryUoW.SaveAsync();

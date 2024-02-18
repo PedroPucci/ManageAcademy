@@ -11,7 +11,7 @@ namespace ManageAcademyWeb.Domain.Entity
 
         protected BaseEntity()
         {
-            DataCreate = DateTime.Now;
+            DataCreate = DateTime.UtcNow;
         }
     }
 }
