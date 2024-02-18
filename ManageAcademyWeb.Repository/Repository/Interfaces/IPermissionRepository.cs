@@ -7,5 +7,7 @@ namespace ManageAcademyWeb.Repository.Repository.Interfaces
         Task<PermissionEntity> AddPermissionAsync(PermissionEntity permissionEntity);
         PermissionEntity UpdatePermission(PermissionEntity permissionEntity);
         Task<List<PermissionEntity>> GetAllPermissionAsync();
+        Task<PermissionEntity> DeletePermissionAsync(string name);
+        Task<PermissionEntity> GetPermissionByNameAsync(string name);
     }
 }

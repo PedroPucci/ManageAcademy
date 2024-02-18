@@ -15,7 +15,7 @@ namespace ManageAcademyWeb.Repository
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(Configuration.GetConnectionString("WebApiDatabase"));
+            optionsBuilder.UseNpgsql(Configuration.GetConnectionString("WebApiDatabase"));
         }
 
         public DbSet<PermissionEntity> PermissionEntity { get; set; }
