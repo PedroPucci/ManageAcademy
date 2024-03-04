@@ -31,6 +31,7 @@ builder.Services.AddScoped<IUnitOfWorkService, UnitOfWorkService>();
 
 IMapper mapper = new Mappers().Configuration().CreateMapper();
 builder.Services.AddSingleton(mapper);
+//builder.Services.AddAutoMapper(typeof(Mappers).Assembly);
 builder.Services.AddTransient<IRepositoryUoW, RepositoryUoW>();
 builder.Services.AddTransient<IUnitOfWorkService, UnitOfWorkService>();
 builder.Services.AddSwaggerGen(c =>
@@ -49,6 +50,7 @@ builder.Services.AddCors(options =>
                       {
                           policy.WithOrigins("http://localhost:4200");
                       });
+    //policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:3000");
 });
 var app = builder.Build();
 

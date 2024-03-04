@@ -7,23 +7,10 @@ namespace ManageAcademyWeb.Repository.Repository
     {
         private readonly DataBaseContext _context;
         private bool _disposed = false;
-        private IPermissionRepository? _permissionRepository = null;
-
+        
         public RepositoryUoW(DataBaseContext context)
         {
             _context = context;
-        }
-
-        public IPermissionRepository PermissionRepository
-        {
-            get
-            {
-                if (_permissionRepository == null)
-                {
-                    _permissionRepository = new PermissionRepository(_context);
-                }
-                return _permissionRepository;
-            }
         }
 
         public async Task SaveAsync()

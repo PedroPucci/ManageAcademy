@@ -1,6 +1,4 @@
 ﻿using AutoMapper;
-using ManageAcademyWeb.Domain.Dto;
-using ManageAcademyWeb.Domain.Entity;
 
 namespace ManageAcademyWeb.Repository
 {
@@ -12,8 +10,8 @@ namespace ManageAcademyWeb.Repository
         {
             return new MapperConfiguration(cfg =>
             {
-                cfg.CreateMap<PermissionEntity, PermissionDto>();
-                cfg.CreateMap<PermissionDto, PermissionEntity>();
+                //cfg.CreateMap<PermissionEntity, PermissionDto>();
+                //cfg.CreateMap<PermissionDto, PermissionEntity>();
             });
         }
     }

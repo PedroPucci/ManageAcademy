@@ -2,6 +2,5 @@
 {
     public interface IUnitOfWorkService
     {
-        PermissionService PermissionService { get; }
     }
 }

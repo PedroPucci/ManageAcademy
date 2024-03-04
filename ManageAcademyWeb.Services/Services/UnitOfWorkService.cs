@@ -10,25 +10,12 @@ namespace ManageAcademyWeb.Services.Services
         private readonly IRepositoryUoW _repositoryUoW;
         private readonly IMapper _mapper;
         private readonly IConfiguration _config;
-        private PermissionService? permissionService;
-
+        
         public UnitOfWorkService(IRepositoryUoW repositoryUoW, IMapper mapper, IConfiguration config)
         {
             _repositoryUoW = repositoryUoW;
             _mapper = mapper;
             _config = config;
-        }
-
-        public PermissionService PermissionService
-        {
-            get
-            {
-                if (permissionService == null)
-                {
-                    permissionService = new PermissionService(_repositoryUoW, _mapper);
-                }
-                return permissionService;
-            }
         }
     }
 }
