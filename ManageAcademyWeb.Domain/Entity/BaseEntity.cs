@@ -7,11 +7,12 @@ namespace ManageAcademyWeb.Domain.Entity
         [Key]
         public int Id { get; private set; }
 
-        public DateTime? DataCreate { get; private set; }
+        public DateTime? CreateDate { get; private set; }
+        public DateTime? ModificationDate { get; set; }
 
         protected BaseEntity()
         {
-            DataCreate = DateTime.UtcNow;
+            CreateDate = DateTime.UtcNow;
         }
     }
 }

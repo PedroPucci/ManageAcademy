@@ -1,10 +1,11 @@
-﻿using ManageAcademyWeb.Domain.Entity;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace ManageAcademyWeb.Repository
 {
     public class DataBaseContext : DbContext
     {
-        public DataBaseContext(DbContextOptions options) : base(options){}
+        public DataBaseContext(DbContextOptions<DataBaseContext> options) : base(options) { }
+
+        //TODO: Add DbSets
     }
 }
